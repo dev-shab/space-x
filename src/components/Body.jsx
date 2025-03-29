@@ -1,12 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import LaunchesTable from "./LaunchesTable";
 
 const Body = () => {
-  const launches = useSelector((store) => store.launches);
-  const launchPads = useSelector((store) => store.launchpads);
-  const rockets = useSelector((store) => store.rockets);
-
-  return <div>Body</div>;
+  return (
+    <div>
+      <LaunchesTable />
+    </div>
+  );
 };
 
 export default Body;
